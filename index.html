@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dad Joke App</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nnu6gqv.css">
+    <link rel="shortcut icon" href="./assets/images/laughing-face-emoji.svg">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    
+    <section class="joke-app">
+        <div class="joke-app__container">
+            <header class="welcome">
+                <h1 class="welcome__title">The Joke DAD_A_BASE</h1>
+                <!-- <img class="welcome__emoji" src="./assets/images/laughing-face-emoji.svg" alt="a laughing face"> -->
+            </header>
+            <main class="main">
+                <form class="main__form">
+                    <label class="main__label">
+                        Enter a word and get a joke or click "Surprise Me" and also get a joke
+                        <input name="main__input" class="main__input">
+                    </label>
+                    <div class="main__buttons">
+                        <button type="submit" class="main__submit button">Get A Joke!</button>
+                        <button type="submit" class="main__random button">Surprise me!</button>
+                    </div>
+                </form>
+                <div class="main__container">
+                    <!-- <div class="main__output">
+                        <p class="main__text">Funny Joke Here, Maybe?</p>
+                    </div> -->
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+            <img src="https://media.giphy.com/media/xTka00DAwqd8DXKorS/giphy.gif" alt="someone laughing" class="footer__image">
+        </footer>
+    </section>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
